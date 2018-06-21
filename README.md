@@ -12,3 +12,13 @@ docBase:该项目的实际放置位置的路径，注意到项目名称这一级
 a. 把项目打包到wabapp目录下。
 b.在bin目录下运行命令 startup.bat 启动项目。（在bin目录里按 shift+右键 即可调出命令框。关闭项目 shutdown.bat）
 你放在wabapp下的所有项目就会自启动，自启动伴随着解压缩包的动作，启动完成后在wabapp下会看到解压后的项目文件夹。
+
+Servlet (interface)
+  |
+GenericServlet
+  |
+HttpServlet
+
+Servlet生命周期: init方法   service方法   destroy方法
+
+init方法提前执行：在web.xml的<servlet>标签中加<load-on-startup>1</load-on-startup> :标签中间数字越小服务器越先初始化
