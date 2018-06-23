@@ -28,3 +28,7 @@ ServletContext获取资源文件的流对象: public InputStream getResourceAsSt
 
 通过类的类对象加载Web资源为流对象
 this.getClass().getClassLoader().getResourceAsStream("../../fileconfig.properties"); ->资源相对路径默认根目录为WEB-INF\classes下
+
+请求Web项目中的Servlet时路径为相对路径
+例如：from表单中的action="Servlet相对路径"  或<a href="Servlet相对路径"></a>  或重定向时的request.sendRedirect("Servlet相对路径");
+如果要写绝对路径时应写  /项目名/Servlet名
