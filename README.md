@@ -30,7 +30,7 @@ ServletContext获取资源文件的流对象: public InputStream getResourceAsSt
 this.getClass().getClassLoader().getResourceAsStream("../../fileconfig.properties"); ->资源相对路径默认根目录为WEB-INF\classes下
 
 请求Web项目中的Servlet时路径为相对路径
-例如：from表单中的action="Servlet相对路径"  或 a标签中 href="Servlet相对路径"  或重定向时的request.sendRedirect("Servlet相对路径");
+例如：from表单中的action="Servlet相对路径"  或 a标签中 href="Servlet相对路径"  或重定向时的response.sendRedirect("Servlet相对路径");
 如果要写绝对路径时应写  /项目名/Servlet名
 
 ServletContext何时创建?合适销毁?
