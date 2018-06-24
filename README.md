@@ -50,3 +50,6 @@ response.setHeader("Content-Disposition","attachment; filename="+fileName);
 IE,Chrome 需要对汉字进行utf-8编码   URLEncoder.encode("汉字...","UTF-8")
 Firefox需要对汉字进行base64编码
 
+response重定向和request请求转发
+response.sendRedirect("Servlet相对路径");
+request.getRequestDispatcher("Servlet相对路径").forward(request,response);
