@@ -32,3 +32,8 @@ this.getClass().getClassLoader().getResourceAsStream("../../fileconfig.propertie
 请求Web项目中的Servlet时路径为相对路径
 例如：from表单中的action="Servlet相对路径"  或 a标签中 href="Servlet相对路径"  或重定向时的request.sendRedirect("Servlet相对路径");
 如果要写绝对路径时应写  /项目名/Servlet名
+
+ServletContext何时创建?合适销毁?
+服务器启动的时候会为每一个web应用程序创建一个ServletContext对象
+从服务器移除托管，或者是关闭服务器
+
