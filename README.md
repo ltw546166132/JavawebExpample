@@ -37,3 +37,7 @@ ServletContext何时创建?合适销毁?
 服务器启动的时候会为每一个web应用程序创建一个ServletContext对象
 从服务器移除托管，或者是关闭服务器
 
+获得请求中的中文数据：
+如果是GET请求  tomcat默认请求为ISO-8859-1解码
+可直接在tomcat里面配制，以后get请求过来的数据永远都是 utf-8编码  ->tomcat里面conf/server.xml
+<Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443" URIEncoding="UTF-8"/>
