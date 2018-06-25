@@ -55,7 +55,7 @@ response.sendRedirect("Servlet相对路径");</br>
 request.getRequestDispatcher("Servlet相对路径").forward(request,response);
 
 //Cookie</br>
-response.addCookie(new Cookie("name", "aaaaa"));&nbsp;//添加Cookie</br>
+response.addCookie(new Cookie("name", "aaaaa"));//添加Cookie</br>
 cookie.setDomain(".ltw.com");    //用于指定只有请求了指定的域名，才会带上该Cookie
 cookie.setPath("/CookieDemo");    //只有访问该域名下的CookieDemo的这个路径地址才会带cookie
 
