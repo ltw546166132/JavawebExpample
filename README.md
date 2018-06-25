@@ -19,7 +19,7 @@ GenericServlet
   |
 HttpServlet
 
-### Servlet生命周期: > init方法 > service方法 > destroy方法
+### Servlet生命周期: init方法 service方法 destroy方法
 
 init方法提前执行：在web.xml的<servlet>标签中加<load-on-startup>3</load-on-startup> :标签中间数字越小服务器越先初始化，一般从2开始不写负数</br>
 
