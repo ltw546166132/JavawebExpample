@@ -53,3 +53,11 @@ Firefox需要对汉字进行base64编码
 response重定向和request请求转发
 response.sendRedirect("Servlet相对路径");
 request.getRequestDispatcher("Servlet相对路径").forward(request,response);
+
+//Cookie
+response.addCookie(new Cookie("name", "aaaaa"));    //添加Cookie
+cookie.setDomain(".ltw.com");    //用于指定只有请求了指定的域名，才会带上该Cookie
+cookie.setPath("/CookieDemo");    //只有访问该域名下的CookieDemo的这个路径地址才会带cookie
+
+Cookie[] cookies = request.getCookies();    //获取Cookie
+
