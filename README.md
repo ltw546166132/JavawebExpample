@@ -47,15 +47,15 @@ ServletContext何时创建?合适销毁?
 response.setHeader("Content-Disposition","attachment; filename="+fileName);
 
 响应头中文情况：
-IE,Chrome 需要对汉字进行utf-8编码   URLEncoder.encode("汉字...","UTF-8")
+IE,Chrome 需要对汉字进行utf-8编码   URLEncoder.encode("汉字...","UTF-8")</br>
 Firefox需要对汉字进行base64编码
 
-response重定向和request请求转发
-response.sendRedirect("Servlet相对路径");
+response重定向和request请求转发</br>
+response.sendRedirect("Servlet相对路径");</br>
 request.getRequestDispatcher("Servlet相对路径").forward(request,response);
 
-//Cookie
-response.addCookie(new Cookie("name", "aaaaa"));    //添加Cookie
+//Cookie</br>
+response.addCookie(new Cookie("name", "aaaaa"));&nbsp;//添加Cookie</br>
 cookie.setDomain(".ltw.com");    //用于指定只有请求了指定的域名，才会带上该Cookie
 cookie.setPath("/CookieDemo");    //只有访问该域名下的CookieDemo的这个路径地址才会带cookie
 
