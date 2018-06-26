@@ -27,8 +27,9 @@ ServletContext获取资源文件：this.getServletContext():getRealPath(""); ->�
 ServletContext获取资源文件的流对象: public InputStream getResourceAsStream(String path)
 
 通过类的类对象加载Web资源为流对象</br>
+<pre><code>
 this.getClass().getClassLoader().getResourceAsStream("../../fileconfig.properties"); ->资源相对路径默认根目录为WEB-INF\classes下
-
+</code></pre>
 请求Web项目中的Servlet时路径为相对路径</br>
 例如：from表单中的action="Servlet相对路径"  或 a标签中 href="Servlet相对路径"  或重定向时的response.sendRedirect("Servlet相对路径");</br>
 如果要写绝对路径时应写  /项目名/Servlet名
@@ -40,26 +41,34 @@ this.getClass().getClassLoader().getResourceAsStream("../../fileconfig.propertie
 ### 获得请求中的中文数据：
 如果是GET请求  tomcat默认请求为ISO-8859-1解码</br>
 可直接在tomcat里面配制，以后get请求过来的数据永远都是 utf-8编码  ->tomcat里面conf/server.xml</br>
+<pre><code>
 <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443" URIEncoding="UTF-8"/>
+</code></pre>
 
 ### 下载文件响应头：
 让浏览器收到这份资源的时候，以下载的方式提示用户，而不是直接展示。</br>
+<pre><code>
 response.setHeader("Content-Disposition","attachment; filename="+fileName);
+</code></pre>
 
 ### 响应头中文情况：</br>
 IE,Chrome 需要对汉字进行utf-8编码   URLEncoder.encode("汉字...","UTF-8")</br>
 Firefox需要对汉字进行base64编码
 
 ### response重定向和request请求转发</br>
+<pre><code>
 response.sendRedirect("Servlet相对路径");</br>
 request.getRequestDispatcher("Servlet相对路径").forward(request,response);
+</code></pre>
 
 ### Cookie:</br>
+<pre><code>
 response.addCookie(new Cookie("name", "aaaaa"));//添加Cookie</br>
 cookie.setDomain(".ltw.com");    //用于指定只有请求了指定的域名，才会带上该Cookie</br>
 cookie.setPath("/CookieDemo");    //只有访问该域名下的CookieDemo的这个路径地址才会带cookie</br>
 
 Cookie[] cookies = request.getCookies();    //获取Cookie
+</code></pre>
 
 ### Session
 会话,Session是基于Cooick的一种会话机制。Cooick是服务器返回一小份数据给客户端，而且存放在客户端上。 Session是数据存放在服务端。</br>
