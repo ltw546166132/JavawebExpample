@@ -64,7 +64,7 @@ Cookie[] cookies = request.getCookies();    //获取Cookie
 ### Session
 会话,Session是基于Cooick的一种会话机制。Cooick是服务器返回一小份数据给客户端，而且存放在客户端上。 Session是数据存放在服务端。</br>
 HttpSession常用api:<br>
-<code>
+<pre><code>
   HttpSession session = request.getSession();
   //得到会话ID
   session.getId();
@@ -74,5 +74,5 @@ HttpSession常用api:<br>
   session.getAttribute(name);
   //移除值
   session.removeAttribute(name);
-</code>
+</code></pre>
 
