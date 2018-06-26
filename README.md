@@ -62,4 +62,17 @@ cookie.setPath("/CookieDemo");    //只有访问该域名下的CookieDemo的这�
 Cookie[] cookies = request.getCookies();    //获取Cookie
 
 ### Session
->会话
+会话,Session是基于Cooick的一种会话机制。Cooick是服务器返回一小份数据给客户端，而且存放在客户端上。 Session是数据存放在服务端。</br>
+HttpSession常用api:<br>
+<code>
+  HttpSession session = request.getSession();
+  //得到会话ID
+  session.getId();
+  //存值
+  session.setAttribute(name,value);
+  //取值
+  session.getAttribute(name);
+  //移除值
+  session.removeAttribute(name);
+</code>
+
