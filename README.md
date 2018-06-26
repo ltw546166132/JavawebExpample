@@ -41,12 +41,7 @@ this.getClass().getClassLoader().getResourceAsStream("../../fileconfig.propertie
 ### 获得请求中的中文数据：
 如果是GET请求  tomcat默认请求为ISO-8859-1解码</br>
 可直接在tomcat里面配制，以后get请求过来的数据永远都是 utf-8编码  ->tomcat里面conf/server.xml</br>
-<pre><code>
-  <root>
   <Connector connectionTimeout="20000" port="8080" protocol="HTTP/1.1" redirectPort="8443" URIEncoding="UTF-8"/>
-  </root>
-</code></pre>
-
 ### 下载文件响应头：
 让浏览器收到这份资源的时候，以下载的方式提示用户，而不是直接展示。</br>
 <pre><code>
