@@ -86,6 +86,7 @@ HttpSession常用api:<br>
 </code></pre>
 
 *Session何时创建，何时销毁?
+
 *创建
 >如果有在servlet里面调用了 request.getSession()
 *销毁
