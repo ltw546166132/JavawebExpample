@@ -89,6 +89,7 @@ HttpSession常用api:<br>
 
 *创建
 >如果有在servlet里面调用了 request.getSession()
+
 *销毁
 >session是存放在服务器的内存中的一份数据。当然可以持久化，Redis,即使关了浏览器，session也不会销毁
 >1.关闭浏览器
