@@ -61,3 +61,5 @@ cookie.setPath("/CookieDemo");    //只有访问该域名下的CookieDemo的这�
 
 Cookie[] cookies = request.getCookies();    //获取Cookie
 
+### Session
+>会话
