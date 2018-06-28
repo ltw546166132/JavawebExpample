@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>testDynamic</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>hello1</servlet-name>
+    <servlet-class>com.webtest.testservlet</servlet-class>
+    <init-param>
+      <param-name>name</param-name>
+      <param-value>lisi...</param-value>
+    </init-param>
+    <init-param>
+      <param-name>address</param-name>
+      <param-value>beijing</param-value>
+    </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>hello1</servlet-name>
+    <url-pattern>/hello1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>cfb</servlet-name>
+    <servlet-class>com.webtest.Testcfb</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>cfb</servlet-name>
+    <url-pattern>/cfb</url-pattern>
+  </servlet-mapping>
+</web-app>
