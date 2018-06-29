@@ -94,3 +94,14 @@ Cookie[] cookies = request.getCookies();    //获取Cookie
 > session是存放在服务器的内存中的一份数据。当然可以持久化，Redis,即使关了浏览器，session也不会销毁
 > 1.关闭浏览器
 > 2.session会话时间过期。有效期过了，默认有效期:30分钟
+
+###JSP内置对象
+out
+pageContext
+request
+session
+application
+exception
+page
+config
+response
