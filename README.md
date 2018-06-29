@@ -97,13 +97,15 @@ Cookie[] cookies = request.getCookies();    //获取Cookie
 
 ###JSP内置对象
 <pre><code>
-out
 pageContext
 request
 session
 application
+out
 exception
 page
 config
 response
 </code></pre>
+> request,session,application,pageContext是作用域对象
+
