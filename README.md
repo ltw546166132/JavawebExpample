@@ -97,13 +97,13 @@ Cookie[] cookies = request.getCookies();    //获取Cookie
 
 ###JSP内置对象
 <pre><code>
-out<br>
-pageContext<br>
-request<br>
-session<br>
-application<br>
-exception<br>
-page<br>
-config<br>
-response<br>
+out
+pageContext
+request
+session
+application
+exception
+page
+config
+response
 </code></pre>
