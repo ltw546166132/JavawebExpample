@@ -96,12 +96,12 @@ Cookie[] cookies = request.getCookies();    //获取Cookie
 > 2.session会话时间过期。有效期过了，默认有效期:30分钟
 
 ###JSP内置对象
-out
-pageContext
-request
-session
-application
-exception
-page
-config
-response
+out<br>
+pageContext<br>
+request<br>
+session<br>
+application<br>
+exception<br>
+page<br>
+config<br>
+response<br>
