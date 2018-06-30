@@ -158,7 +158,7 @@ response
 
   ```xml
   <c:set var="age" value="18"></c:set>
-  <c:if test="${age>16}">
+  <c:if test="${age>16}" var="flag" scope="session">   //test中的判断结果可以被var作为变量接收
     年纪大于16
   </c:if>
   ```
