@@ -148,9 +148,11 @@ response
 ```
 * c:set
   
-  声明一个对象name,对象的值ltw,存储到了page(默认),指定是session<br>
-  <c:set var="name" value="ltw" scope="session"></c:set><br>
-  ${sessionScope.name}<br>
+  ```xm
+  声明一个对象name,对象的值ltw,存储到了page(默认),指定是session
+  <c:set var="name" value="ltw" scope="session"></c:set>
+  ${sessionScope.name}
+  ```
 
 * c:if
 
