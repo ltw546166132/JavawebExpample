@@ -109,3 +109,31 @@ response
 </code></pre>
 > request,session,application,pageContext是作用域对象
 
+### EL表达式
+* EL操作四大域的内置对象：它们是Map类型
+<pre><code>
+  pageScope
+  requestScope
+  sessionScope
+  applicationScope
+
+  ${pageScope.user}：输出pageContext.getAttribute("user")
+  ${requestScope.user}：输出request.getAttribute("user");
+  ${sessionScope.user}：输出session.getAttribute("user");
+  ${applicationScope.user}：输出application.getAttribute("user");
+</code></pre>
+* JavaBean导航
+<pre><code>
+  ${requestScope.emp.address.stree}等同于
+  <%request.getAttribute("emp").getAddress().getStreet()%>
+
+  操作JavaBean
+  <%
+  User user = new User();
+  user.setUsername("zhangSan");
+  user.setPassword("123");
+  pageContext.setAttribute("user", user);
+  %>
+  ${pageScope.user.username}
+  ${pageScope.user.password}
+</code></pre>
