@@ -153,8 +153,9 @@ response
   ${sessionScope.name}<br>
 
 * c:if
-
+  <code>
   <c:set var="age" value="18"></c:set>
   <c:if test="${age>16}">
     年纪大于16
   </c:if>
+  </code>
