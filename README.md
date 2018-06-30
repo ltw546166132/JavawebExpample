@@ -137,3 +137,6 @@ response
   ${pageScope.user.username}
   ${pageScope.user.password}
 </code></pre>
+
+### JSTL
+* 使用时需要引入jar包
