@@ -141,7 +141,9 @@ response
 ### JSTL
 * 使用时需要引入jar包
 ### 常用标签
-<c:set></c:set>
-<c:if test=""></c:if>
-<c:forEach></c:forEach>
+<pre><code>
+  <c:set></c:set>
+  <c:if test=""></c:if>
+  <c:forEach></c:forEach>
+</code></pre>
 
