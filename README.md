@@ -170,5 +170,11 @@ response
   <c:forEach begin="1" end="10" var="i" step="2">
     ${i}
   </c:forEach>
+---------------------------------------------------------------------
+  item:表示遍历哪一个对象，注意，这里必须写EL表达式。
+  var:遍历出来的每一个元素用user接受
+  <c:forEach var="user" item="${list}">
+    <c:out value="${user.name}---${user.age}">
+  </c:forEach>
   ```
   
