@@ -162,3 +162,12 @@ response
     年纪大于16
   </c:if>
   ```
+
+* c:forEach
+  从1开始遍历到10，得到的结果，赋值给i，并且会存储到page域中，step,增幅为2
+  ```xml
+  <c:forEach begin="1" end="10" var="i" step="2">
+    ${i}
+  </c:forEach>
+  ```
+  
